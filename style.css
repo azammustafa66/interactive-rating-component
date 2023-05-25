@@ -69,7 +69,7 @@ body {
   text-align: center;
 }
 
-.num-btn {
+.number-btn {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-auto-flow: column;
@@ -78,7 +78,7 @@ body {
   width: 100%;
 }
 
-.num-btn button {
+.num-btn {
   border: none;
   color: hsl(217, 12%, 63%);
   font-size: 1rem;
@@ -89,8 +89,9 @@ body {
   width: 3rem;
 }
 
-.num-btn button:hover {
+.num-btn:hover {
   background-color: hsl(216, 12%, 54%);
+  color: #fff;
 }
 
 .submit-btn {
@@ -109,8 +110,8 @@ body {
   font-weight: 700;
   padding: 0.45rem;
   border-radius: 1.5rem;
-  letter-spacing: 2.5px;
-  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-size: 1rem;
 }
 
 .submit-btn button:hover {
@@ -126,6 +127,7 @@ button:hover {
   display: none;
 }
 
-.selected {
+.btn--orange {
   background-color: hsl(25, 97%, 53%);
+  color: #fff;
 }

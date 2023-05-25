@@ -8,9 +8,11 @@ const ratingElement = document.querySelector(".rating");
 let userRating = null;
 
 numButtons.forEach((button) => {
+  button.classList.remove('btn--orange');
   button.addEventListener("click", () => {
-    button.classList.add("selected");
     userRating = parseInt(button.innerText);
+      button.classList.remove("btn--orange");
+    button.classList.add("btn--orange");
   });
 });
 
